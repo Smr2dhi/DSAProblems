@@ -1,10 +1,11 @@
-package inheritance;
+package OOps.Principle.inheritance;
 
 public class Box {
     double l;
     double h;
     double w;
     Box(){
+        super();
         this.h=-1;
         this.l=-1;
         this.w=-1;
@@ -27,6 +28,9 @@ Box(Box old){
     }
     public void information(){
         System.out.println("Running the box");
+    }
+    static void run(){
+        System.out.println("Running in main Box ");
     }
 
 }
